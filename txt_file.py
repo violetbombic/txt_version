@@ -17,7 +17,11 @@ if uploaded_text_file is not None:
 #https://stackoverflow.com/questions/11914472/how-to-use-stringio-in-python3
 
 import nltk
-nltk.download('all')
+nltk.download('wordnet')
+nltk.download('words')
+nltk.download('stopwords')
+nltk.download("punkt")
+nltk.download('averaged_perceptron_tagger')
 
 if uploaded_text_file is not None:
   words_tokens = word_tokenize( text )
@@ -44,6 +48,13 @@ if uploaded_text_file is not None:
  
   
   if uploaded_text_file is not None:
-    badwords.extend(puncts_list, no_short_words) 
+    badwords.extend(puncts_list) 
     #st.write( badwords )
+    
+  if uploaded_text_file is not None:
+    text2 = text1.split()
+    no_short_words = [word for word in text1 if len(word) <= 2]
+    new_text = ",".join(text2)
+    badwords.extend(no_short_words)
+    st.write(new_text)
 
