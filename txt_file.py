@@ -42,7 +42,7 @@ if uploaded_text_file is not None:
   badwords = stopwords.words('english')
   #st.write( badwords )
 
-if uploaded_text_file is not Non:
+if uploaded_text_file is not None:
   badwords.extend(puncts_list) 
   st.write( badwords )
 
