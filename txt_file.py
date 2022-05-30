@@ -41,12 +41,9 @@ from nltk.corpus import stopwords
 if uploaded_text_file is not None:
   badwords = stopwords.words('english')
   #st.write( badwords )
-
-no_short_words = [word for word in text1 if len(word) <= 2]
-no_short_words  
+ 
   
-   
-if uploaded_text_file is not None:
-  badwords.extend(puncts_list, no_short_words) 
-  st.write( badwords )
+  if uploaded_text_file is not None:
+    badwords.extend(puncts_list, no_short_words) 
+    #st.write( badwords )
 
