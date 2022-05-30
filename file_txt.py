@@ -1,7 +1,7 @@
 import streamlit as st
 from io import StringIO
 
-st.header("Welcome! ")
+st.header("Welcome! ") 
 
 #INPUT
 #Open a .txt file to read
