@@ -15,6 +15,8 @@ if uploaded_text_file is not None:
 
 #https://stackoverflow.com/questions/11914472/how-to-use-stringio-in-python3
 
+import nltk
+nltk.download('all')
 
 if uploaded_text_file is not None:
   words_tokens = word_tokenize( text )
