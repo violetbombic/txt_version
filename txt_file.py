@@ -34,10 +34,15 @@ if uploaded_text_file is not None:
 from string import punctuation
 puncts = punctuation
 puncts_list = [ s for s in puncts ]
-st.write( puncts_list )
+#st.write( puncts_list )
 
 
 from nltk.corpus import stopwords 
 if uploaded_text_file is not None:
   badwords = stopwords.words('english')
+  #st.write( badwords )
+
+if uploaded_text_file is not Non:
+  badwords.extend(puncts_list) 
   st.write( badwords )
+
