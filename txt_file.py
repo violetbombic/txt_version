@@ -27,4 +27,10 @@ if uploaded_text_file is not None:
 
 import re
 text1=re.sub("([^A-Za-z])"," ",text)
-st.write(text1)
+#st.write(text1)
+
+
+from string import punctuation
+puncts = punctuation
+puncts_list = [ s for s in puncts ]
+st.write( puncts_list )
