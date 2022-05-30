@@ -22,4 +22,9 @@ nltk.download('all')
 if uploaded_text_file is not None:
   words_tokens = word_tokenize( text )
 
-st.write( words_tokens )
+#st.write( words_tokens )
+
+
+import re
+text1=re.sub("([^A-Za-z])"," ",text)
+st.write(text1)
