@@ -53,7 +53,7 @@ if uploaded_text_file is not None:
     
   if uploaded_text_file is not None:
     text2 = text1.split()
-    no_short_words = [word for word in text1 if len(word) <= 2]
+    no_short_words = [word for word in text2 if len(word) <= 2]
     new_text = ",".join(text2)
     badwords.extend(no_short_words)
     st.write(new_text)
