@@ -10,8 +10,13 @@ if uploaded_text_file is not None:
   stringio = StringIO(uploaded_text_file.getvalue().decode("utf-8"))
   string_data = stringio.read()
   text = string_data
-  st.subheader("Let's look at your text you have uploaded!")
-  st.write(text)
-
+  #st.subheader("Let's look at your text you have uploaded!")
+  #st.write(text)
 
 #https://stackoverflow.com/questions/11914472/how-to-use-stringio-in-python3
+
+
+if uploaded_text_file is not None:
+  words_tokens = word_tokenize( text )
+
+st.write( words_tokens )
