@@ -27,7 +27,7 @@ if uploaded_text_file is not None:
 
 import re
 if uploaded_text_file is not None:
-text1=re.sub("([^A-Za-z])"," ",text)
+  text1=re.sub("([^A-Za-z])"," ",text)
 #st.write(text1)
 
 
@@ -39,5 +39,5 @@ st.write( puncts_list )
 
 from nltk.corpus import stopwords 
 if uploaded_text_file is not None:
-badwords = stopwords.words('english')
-st.write( badwords )
+  badwords = stopwords.words('english')
+  st.write( badwords )
